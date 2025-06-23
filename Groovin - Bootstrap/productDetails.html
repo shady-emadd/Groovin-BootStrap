@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <!-- ^===========> Font awesome library Icon -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- ^===========> Animate.CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- ^===========> Bootstrap  -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- *===========> Main Stylesheet  -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="./index.html#products">Products</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">T-shirt</li>
+      </ol>
+    </nav>
+    <!--!===========|> Product Details -->
+    <section class="min-vh-100 bg-gradient">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div
+            class="col-lg-1 col-12 gallery-items d-flex d-lg-block gap-2 gap-lg-0 mt-2 mt-lg-0"
+          >
+            <div class="mb-3">
+              <img
+                src="images/product details/2.png"
+                class="object-fit-cover"
+                alt="Product Image"
+              />
+            </div>
+            <div class="mb-3">
+              <img
+                src="images/product details/3.png"
+                class="object-fit-cover"
+                alt="Product Image"
+              />
+            </div>
+            <div class="mb-3">
+              <img
+                src="images/product details/4.png"
+                class="object-fit-cover"
+                alt="Product Image"
+              />
+            </div>
+
+            <div class="mb-3">
+              <img
+                src="images/product details/5.png"
+                class="object-fit-cover"
+                alt="Product Image"
+              />
+            </div>
+
+            <div class="mb-3">
+              <img
+                src="images/product details/6.png"
+                class="object-fit-cover"
+                alt="Product Image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 h-100 order-first order-lg-0 main-image">
+            <video class="w-100 object-fit-cover" autoplay loop muted>
+              <source src="./images/product details/video.mov" />
+            </video>
+          </div>
+          <div class="col-lg-5 d-flex flex-column gap-3">
+            <header>
+              <h2 class="fw-bold">EAGLE Men Polo Tshirt S/S Printed</h2>
+              <div class="rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star text-warning"></i>
+              </div>
+            </header>
+            <div class="price">
+              <h3>
+                <del class="text-secondary fs-5 fw-bold">$14.90</del>
+                <ins class="text-decoration-none text-main fw-bold">$9.90</ins>
+              </h3>
+            </div>
+            <div class="colors">
+              <h3 class="text-capitalize">colors:</h3>
+              <div class="colors_content d-flex gap-3">
+                <div style="--bg-color: #eee"></div>
+                <div style="--bg-color: #ccc"></div>
+                <div style="--bg-color: #211c6a" class="active"></div>
+                <div style="--bg-color: #74e291"></div>
+                <div style="--bg-color: #ff6868"></div>
+              </div>
+            </div>
+
+            <div class="information">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#product-details"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Product Details
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#size"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Size & Fit
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="product-details"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  The Nike Dri-FIT T-Shirt delivers a soft feel, sweat-wicking
+                  performance and a great range of motion to get you through
+                  your workout in total comfort.
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="size"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <ul>
+                    <li>Model is wearing size M and is 6'2"/188cm</li>
+                    <li>
+                      Big & Tall model is wearing size 2XL and is 6'5"/196cm
+                    </li>
+                    <li>Standard fit: easy and traditional</li>
+                    <li>Size Guide</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-started text-uppercase">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

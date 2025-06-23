@@ -1,0 +1,277 @@
+:root {
+  --main-color: #5c9f24;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+/* *===========|> Global Styles */
+
+main > section {
+  padding-block: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  main > section {
+    padding-block: 80px;
+  }
+}
+
+/* *===========|> Reused Styles */
+.btn-started {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #5c9f24;
+  --bs-btn-border-color: #5c9f24;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #68b32b;
+  --bs-btn-hover-border-color: #68b32b;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-section {
+  background-color: #f1f1f1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+/* *===========|> Navbar */
+.navbar-brand {
+  --bs-navbar-brand-color: #fff;
+}
+
+.navbar-nav {
+  --bs-nav-link-color: #bbb;
+  --bs-nav-link-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-nav-link-padding-x: 0;
+}
+
+.navbar .nav-link {
+  position: relative;
+}
+
+.navbar .nav-link::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  transition: width 400ms;
+}
+
+.navbar .nav-link:hover::before,
+.navbar .nav-link.active::before {
+  width: 100%;
+}
+/* *===========|> Header */
+.carousel-item {
+  padding-top: 84px;
+  background-size: cover;
+  background-position: bottom -80px center;
+  position: relative;
+  isolation: isolate;
+}
+
+.carousel-item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.carousel-item p {
+  width: 80%;
+  font-size: 17px;
+  max-width: 900px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff8;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: var(--main-color);
+}
+
+/* *===========|> FAQ Section */
+.accordion-item {
+  border: none;
+  --bs-accordion-active-bg: transparent;
+}
+
+.accordion-button {
+  font-weight: 600;
+  transition: color 400ms;
+}
+
+.accordion-button:hover {
+  color: var(--main-color);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  --bs-accordion-active-color: var(--main-color);
+}
+
+/* *===========|> Our Products Section */
+.products .nav-link {
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 300ms, color 300ms;
+}
+
+.products .nav-link:hover {
+  background-color: #5c9f24;
+  color: #fff;
+}
+
+.products .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #5c9f24;
+  color: #fff;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.item__layer {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.item:hover .item__layer {
+  opacity: 1;
+}
+
+.item img {
+  transition: transform 400ms;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+/* *===========|> Product Details */
+.gallery-items img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+
+.main-image video {
+  height: 600px;
+}
+
+.colors_content > div {
+  --bg-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--bg-color);
+}
+.colors_content > div::before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  border: 1px solid var(--bg-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: none;
+}
+
+.colors_content > div.active::before {
+  display: block;
+}
+
+.information .nav-link {
+  background-color: transparent;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+  font-weight: 700;
+  border-radius: 0px;
+}
+
+.information .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #111;
+  --bs-nav-pills-link-active-bg: transparent;
+  border-bottom: 4px solid #777;
+}
+
+.skip-link {
+  top: -100px;
+  left: 50%;
+  transition: top 350ms;
+  background-color: red;
+  z-index: 9999999999;
+}
+
+.skip-link:focus {
+  top: 0px;
+}
+
+/* *==========> Contact */
+.contact .form-floating > textarea {
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.form-control:focus {
+  border-color: #5c9f24;
+  border-width: 2px;
+  box-shadow: none;
+}

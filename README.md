@@ -4,7 +4,8 @@ Groovin is a simple and fully responsive front-end website built using HTML5, CS
 
 ## 🚀 Features
 
-- **Hero Section** – Prominent title/banner area for branding or introduction
+- **Home Section** – Prominent banner area for introduction
+- **Faq Section** – Prominent banner area for Faq questions
 - **Products Section** – Responsive product cards using Bootstrap grid
 - **Contact Us Section** – Basic form layout for user messages
 - **Responsive Design** – Mobile-first approach using Bootstrap 5
